@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 function getMetaDATA($params)
 {
-    $bdb_auth_sipem = creat_cnx('192.168.1.253', 'root', 'clvohama', $params['data']);
+    $bdb_auth_sipem = creat_cnx('', '', '', $params['data']);
     echo json_encode(getData($bdb_auth_sipem, $params['data']));
 }
 
